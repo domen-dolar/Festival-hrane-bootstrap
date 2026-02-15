@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Festival hrane</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                
+                <!-- Logotip -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Logotip" width="40" height="40" class="me-2">
+                    Festival hrane
+                </a>
+
+                <!-- Gumb za mobilni meni -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Povezave -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="festival.html">O festivalu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex-grow-1">
+        <div id="foodCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slike/street-food-0.jpg" class="d-block w-100 vh-100" style="object-fit: cover;" alt="Street Food">
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="display-4 fw-bold">Najboljši okusi v mestu</h1>
+                        <a href="#rezervacija" class="btn btn-warning btn-lg mt-3">Rezerviraj mizo</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="slike/street-food-2.jpg" class="d-block w-100 vh-100" style="object-fit: cover;" alt="Street Food">
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="display-4 fw-bold">Okusi eksotične specialitete</h1>
+                        <a href="#rezervacija" class="btn btn-warning btn-lg mt-3">Rezerviraj mizo</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="slike/street-food-1.jpg" class="d-block w-100 vh-100" style="object-fit: cover;" alt="Street Food">
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                        <h1 class="display-4 fw-bold">Festival hrane</h1>
+                        <a href="#ponudba" class="btn btn-warning btn-lg mt-3">Poglej ponudbo</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Kaj ponujamo?</h2>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/burger.jpg" class="card-img-top img-fluid rounded-3" alt="Burgerji">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Burgerji</h5>
+                                <p class="card-text">Slastni, sočni burgerji z domačimi omakami in svežo zelenjavo - prava poslastica za ljubitelje hitre hrane.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/sushi.jpeg" class="card-img-top img-fluid rounded-3" alt="Sushi">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Azijska kuhinja</h5>
+                                <p class="card-text">Okusi Azije na tvojem krožniku - wok jedi, sushi in curry za popestritev festivala okusov.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/desert.jpeg" class="card-img-top img-fluid rounded-3" alt="Sladice">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Sladice</h5>
+                                <p class="card-text">Nežno čokoladne torte, kremne sladice in sveže sadje - sladki zaključek za vsakega gurmana.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Glavni kuharji</h2>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/classiccook.jpg" class="card-img-top img-fluid rounded-3" alt="Klasicni kuhar">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Marko Orehovec</h5>
+                                <p class="card-text">
+                                    Mojster klasičnih slovenskih jedi, ki jih pripravlja z ljubeznijo in tradicijo. Njegovi recepti prinašajo nostalgijo in pristne okuse domače kuhinje.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/asiancook.jpg" class="card-img-top img-fluid rounded-3" alt="Azijski kuhar">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chan Lee</h5>
+                                <p class="card-text">
+                                    Strokovnjak za azijske okuse - od aromatičnega woka do precizno narezanega sushija. Njegova kuhinja je pravo potovanje po Daljnem vzhodu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="slike/desertcook.jpg" class="card-img-top img-fluid rounded-3" alt="Kuhar sladic">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Eva Praznik</h5>
+                                <p class="card-text">
+                                    Sladki čarovnik festivala! Njene torte, mousse-i in domače sladice očarajo vsakogar, ki si želi sladkega vrhunca po obroku.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="bg-dark text-white">
+            <div class="container py-4">
+        
+                <div class="row align-items-center text-center text-md-start">
+
+                    <!-- Leva stran -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="d-flex flex-column flex-md-row 
+                            align-items-center align-items-md-start 
+                            justify-content-center justify-content-md-start 
+                            text-center text-md-start"
+                        >
+                            <a href="index.html">
+                                <img src="logo.png" alt="Logotip" width="52" height="52" class="me-2 mb-2 mb-md-0">
+                            </a>
+                            <div>
+                                <a class="link-underline link-underline-opacity-0 text-light" href="index.html">
+                                    <h5 class="mb-1">Festival hrane</h5>
+                                </a>
+                                <small>&copy; 2026 | Vse pravice pridržane.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desna stran - Social -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
+
+                            <a href="https://facebook.com" target="_blank" 
+                            class="text-white text-decoration-none d-flex align-items-center social-link facebook-link">
+                                <i class="bi bi-facebook fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://instagram.com" target="_blank" 
+                            class="text-white text-decoration-none d-flex align-items-center social-link instagram-link">
+                                <i class="bi bi-instagram fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://twitter.com" target="_blank" 
+                            class="text-white text-decoration-none d-flex align-items-center social-link twitter-link">
+                                <i class="bi bi-twitter-x fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://youtube.com" target="_blank" 
+                            class="text-white text-decoration-none d-flex align-items-center social-link youtube-link">
+                                <i class="bi bi-youtube fs-5 me-2"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

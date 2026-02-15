@@ -1,0 +1,43 @@
+.social-link {
+    transition: 0.3s ease;
+}
+.facebook-link:hover {
+    color: #4267B2 !important;
+    transform: translateY(-2px);
+}
+.instagram-link:hover {
+    color: #e1306c !important;
+    transform: translateY(-2px);
+}
+.twitter-link:hover {
+    color: #000000 !important;
+    transform: translateY(-2px);
+}
+.youtube-link:hover {
+    color: #ff0000 !important;
+    transform: translateY(-2px);
+}
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.35); /* rahlo zatemnjen overlay */
+}
+.carousel-caption h1 {
+    color: #fff;
+}
+.carousel-caption .btn {
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
+.main-container {
+    margin-top: 10vh;
+}
+@media (min-width: 992px) {
+    .main-container {
+        margin-top: 20vh;
+    }
+}

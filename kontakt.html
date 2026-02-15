@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Festival hrane | Kontakt</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                
+                <!-- Logotip -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Logotip" width="40" height="40" class="me-2 fs-1">
+                    Festival hrane
+                </a>
+
+                <!-- Gumb za mobilni meni -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Povezave -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Domov</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="festival.html">O festivalu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="container main-container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 px-4">
+                    <h2 class="text-center mb-5">Rezerviraj mizo</h2>
+
+                    <form onsubmit="validateForm()">
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Ime in priimek</label>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPersonNmbr" class="form-label">Število oseb</label>
+                            <select class="form-select" id="inputPersonNmbr" aria-label="Izberite stevilo oseb" required>
+                                <option selected>Izberite število oseb</option>
+                                <option value="1">Ena oseba</option>
+                                <option value="2">Dve osebi</option>
+                                <option value="3">Tri osebe</option>
+                                <option value="4">Štiri osebe</option>
+                                <option value="5">Pet oseb</option>
+                                <option value="6">Večja skupina</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputDateTime" class="form-label">Izberite datum in uro</label>
+                            <input type="datetime-local" class="form-control" id="inputDateTime" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-5">Rezerviraj</button>
+                    </form>
+                </div>
+                <div class="col-md-6 px-4">
+                    <h2 class="text-center mb-5">Kako do nas</h2>
+
+                    <div>
+                        <div>
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <a href="https://maps.app.goo.gl/dmFWjD8NdeVk7xfS8" target="_blank" rel="noopener noreferrer">
+                                Cesta Simona Blatnika 24, 3320 Velenje
+                            </a>
+                            <br>
+                        </div>
+                        <div class="my-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:+38655123456">
+                                +386 55 123 456
+                            </a>
+                            <br>
+                        </div>
+                        <div class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:kontakt@festival-hrane.si">
+                                kontakt@festival-hrane.si
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d857.6329041420385!2d15.093379877046104!3d46.36882240621845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2ssi!4v1771177513560!5m2!1sen!2ssi" width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-dark text-white mt-5">
+            <div class="container py-4">
+        
+                <div class="row align-items-center text-center text-md-start">
+
+                    <!-- Leva stran -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="d-flex flex-column flex-md-row 
+                            align-items-center align-items-md-start 
+                            justify-content-center justify-content-md-start 
+                            text-center text-md-start"
+                        >
+                            <a href="index.html">
+                                <img src="logo.png" alt="Logotip" width="52" height="52" class="me-2 mb-2 mb-md-0">
+                            </a>
+                            <div>
+                                <a class="link-underline link-underline-opacity-0 text-light" href="index.html">
+                                    <h5 class="mb-1">Festival hrane</h5>
+                                </a>
+                                <small>&copy; 2026 | Vse pravice pridržane.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desna stran - Social -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center justify-content-md-end flex-wrap gap-3">
+
+                            <a href="https://facebook.com" target="_blank" 
+                                class="text-white text-decoration-none d-flex align-items-center social-link facebook-link">
+                                <i class="bi bi-facebook fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://instagram.com" target="_blank" 
+                                class="text-white text-decoration-none d-flex align-items-center social-link instagram-link">
+                                <i class="bi bi-instagram fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://twitter.com" target="_blank" 
+                                class="text-white text-decoration-none d-flex align-items-center social-link twitter-link">
+                                <i class="bi bi-twitter-x fs-5 me-2"></i>
+                            </a>
+
+                            <a href="https://youtube.com" target="_blank" 
+                                class="text-white text-decoration-none d-flex align-items-center social-link youtube-link">
+                                <i class="bi bi-youtube fs-5 me-2"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
