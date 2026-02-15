@@ -1,0 +1,30 @@
+name: Auto Deploy to Apache Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
+          port: 2200
+          script: |
+            cd /var/www/domendolar/festivalhrane
+
+            echo "🔁 Pulling latest code..."
+            git fetch --all
+            git reset --hard origin/main
+
+            echo "✅ Deployment completed successfully!"
